@@ -1,0 +1,421 @@
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~ (master)
+$ cd Documents
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents (master)
+$ cd GitHub
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub (master)
+$ cd lab-bash
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ ls
+'Solution git-bash Alexej2022'   inputs/   lorem-copy/   readme.md
+ exercices/                      lorem/    outputs/
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git add .
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ ls
+'Solution git-bash Alexej2022'   inputs/   lorem-copy/   readme.md
+ exercices/                      lorem/    outputs/
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ echo "Hello World"
+Hello World
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ mkdir new_folder
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ ls
+'Solution git-bash Alexej2022'   inputs/   lorem-copy/   outputs/
+ exercices/                      lorem/    new_folder/   readme.md
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ rmdir new_folder
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ cp sed.txt lorem-copy
+cp: cannot stat 'sed.txt': No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ cd lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cp sed.txt lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ pwd
+/c/Users/it-it/Documents/GitHub/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cp {at.txt,lorem.txt} /c/Users/it-it/Desktop/IronHackLabs/labBash/lab-bash/lorem-copy
+cp: target '/c/Users/it-it/Desktop/IronHackLabs/labBash/lab-bash/lorem-copy' is not a directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ pwd
+/c/Users/it-it/Documents/GitHub/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cp {at.txt,lorem.txt} /c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ ^[[200~cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+bash: $'\E[200~cd': command not found
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ echo "Homo homini lupus." >> sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ sed -i '' 's/et/ET/g' at.txt
+sed: can't read s/et/ET/g: No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ whoami
+it-it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/it-it/Documents/GitHub/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem-copy (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cat sed.txt | wc -l sed.txt
+9 sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash/lorem (master)
+$ cd /c/Users/it-it/Documents/GitHub/lab-bash
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ ls -d *lorem* | wc -l
+2
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git add .
+warning: in the working copy of 'lorem-copy/sed.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'lorem-copy/at.txt', LF will be replaced by CRLF the next time Git touches it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   lorem-copy/at.txt
+        new file:   lorem-copy/lorem.txt
+        modified:   lorem-copy/sed.txt
+        new file:   lorem/lorem-copy
+
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git add .
+warning: in the working copy of 'final solution git bash', LF will be replaced by CRLF the next time Git touches it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   final solution git bash
+        new file:   lorem-copy/at.txt
+        new file:   lorem-copy/lorem.txt
+        modified:   lorem-copy/sed.txt
+        new file:   lorem/lorem-copy
+
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git commit -m "final solution git bash"
+[master fed5fe7] final solution git bash
+ 5 files changed, 253 insertions(+)
+ create mode 100644 final solution git bash
+ create mode 100644 lorem-copy/at.txt
+ create mode 100644 lorem-copy/lorem.txt
+ create mode 100644 lorem/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ git push
+remote: Permission to ironhack-labs/lab-bash.git denied to Alexej2022.
+fatal: unable to access 'https://github.com/ironhack-labs/lab-bash.git/': The requested URL returned error: 403
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ cd cd /c/Users/it-it/lab-bash
+bash: cd: too many arguments
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/Documents/GitHub/lab-bash (master)
+$ cd /c/Users/it-it/lab-bash
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ echo "Hello World"
+Hello World
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ mkdir new_folder
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_folder/  outputs/  readme.md
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ rmdir new_folder
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ cd /c/Users/it-it/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt cd /c/Users/it-it/lab-bash/lorem-copy
+cp: cannot stat 'cd': No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cp sed.txt /c/Users/it-it/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cd c/Users/it-it/lab-bash/lorem-copy
+bash: cd: c/Users/it-it/lab-bash/lorem-copy: No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cd c/Users/it-it/lab-bash/lorem-copy
+bash: cd: c/Users/it-it/lab-bash/lorem-copy: No such file or directory
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ pwd
+/c/Users/it-it/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cd /c/Users/it-it/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/it-it/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd /c/Users/it-it/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cp {at.txt,lorem.txt} /c/Users/it-it/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt | cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cd /c/Users/it-it/lab-bash/lorem-copy
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ echo "Homo homini lupus." >> sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd /c/Users/it-it/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ sed -i " 's/et/ET/g' at.txt
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ whoami
+it-it
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ pwd
+/c/Users/it-it/lab-bash/lorem
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ ls *.txt
+at.txt  lorem.txt  sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cat sed.txt | wc -l sed.txt
+9 sed.txt
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ ls -d *lorem* | wc -l
+1
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash/lorem (master)
+$ cd /c/Users/it-it/lab-bash/
+
+it-it@DESKTOP-DJRNIPG MINGW64 ~/lab-bash (master)
+$ ls -d *lorem* | wc -l
+2
+
+it-it
